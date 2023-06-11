@@ -1318,7 +1318,7 @@ redis:
 
   metrics:
     # -- Deploy metrics service
-    enabled: false
+    enabled: true
 
     # Redis metrics service configuration
     service:
@@ -1790,7 +1790,7 @@ server:
   ## Server metrics service configuration
   metrics:
     # -- Deploy metrics service
-    enabled: false
+    enabled: true
     service:
       # -- Metrics service type
       type: ClusterIP
@@ -2265,7 +2265,7 @@ repoServer:
   ## Repo server metrics service configuration
   metrics:
     # -- Deploy metrics service
-    enabled: false
+    enabled: true
     service:
       # -- Metrics service type
       type: ClusterIP
@@ -2422,7 +2422,7 @@ applicationSet:
   ## Metrics service configuration
   metrics:
     # -- Deploy metrics service
-    enabled: false
+    enabled: true
     service:
       # -- Metrics service type
       type: ClusterIP

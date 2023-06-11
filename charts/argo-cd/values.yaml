@@ -695,7 +695,7 @@ controller:
     metrics: 8082
 
   # -- Host Network for application controller pods
-  hostNetwork: false
+  hostNetwork: true
 
   # -- [DNS configuration]
   dnsConfig: {}
@@ -771,7 +771,7 @@ controller:
     enabled: true
     applicationLabels:
       # -- Enables additional labels in argocd_app_labels metric
-      enabled: false
+      enabled: true
       # -- Additional labels
       labels: []
     service:
@@ -2800,7 +2800,7 @@ notifications:
       portName: http-metrics
     serviceMonitor:
       # -- Enable a prometheus ServiceMonitor
-      enabled: false
+      enabled: true
       # -- Prometheus ServiceMonitor selector
       selector: {}
         # prometheus: kube-prometheus
